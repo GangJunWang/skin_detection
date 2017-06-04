@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/project_color"
+            android:layout_height="@dimen/dp50">
+
+            <TextView
+                android:textSize="@dimen/sp17"
+                android:textColor="@android:color/white"
+                android:layout_centerInParent="true"
+                android:text="历史记录"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_01"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:background="@color/project_color"
+            android:paddingBottom="@dimen/dp18"
+            android:layout_height="@dimen/dp73">
+
+            <TextView
+                android:textSize="@dimen/sp17"
+                android:textColor="@android:color/white"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="历史记录"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_record_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

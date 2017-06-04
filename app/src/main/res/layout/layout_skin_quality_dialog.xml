@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_skin_quality_result"
+            android:layout_width="357dp"
+            android:layout_height="205dp"
+            android:src="@mipmap/ball_win"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp71"
+            android:layout_marginLeft="@dimen/dp10"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/project_color"
+                android:textSize="@dimen/sp10"
+                android:includeFontPadding="false"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/dp02"
+                android:text="水分"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_skin_quality_dialog_water"
+                    android:textColor="@color/project_color"
+                    android:textSize="@dimen/sp15"
+                    android:includeFontPadding="false"
+                    android:text="00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/project_color"
+                    android:textSize="@dimen/sp11"
+                    android:includeFontPadding="false"
+                    android:text="%"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp155"
+            android:layout_marginLeft="@dimen/dp10"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_skin_quality_dialog_oil"
+                    android:textColor="@color/project_color"
+                    android:textSize="@dimen/sp15"
+                    android:includeFontPadding="false"
+                    android:text="00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/project_color"
+                    android:textSize="@dimen/sp11"
+                    android:includeFontPadding="false"
+                    android:text="%"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <TextView
+                android:textColor="@color/project_color"
+                android:textSize="@dimen/sp10"
+                android:includeFontPadding="false"
+                android:layout_marginLeft="@dimen/dp02"
+                android:textStyle="bold"
+                android:text="油分"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_skin_quality_dialog_own_1"
+            android:layout_marginTop="95dp"
+            android:layout_marginLeft="95dp"
+            android:textColor="@color/gray_06"
+            android:textSize="@dimen/sp22"
+            android:includeFontPadding="false"
+            android:text="M兔:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_skin_quality_dialog_own"
+            android:layout_marginTop="95dp"
+            android:layout_toRightOf="@+id/tv_skin_quality_dialog_own_1"
+            android:textColor="@color/gray_06"
+            android:textSize="@dimen/sp22"
+            android:includeFontPadding="false"
+            android:text="恭喜你！"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_skin_quality_dialog_own_result"
+            android:layout_marginTop="135dp"
+            android:layout_marginLeft="78dp"
+            android:textColor="@color/gray_06"
+            android:textSize="@dimen/sp15"
+            android:includeFontPadding="false"
+            android:text="你战胜了你闺蜜的肤质"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_skin_quality_dialog_share"
+            android:layout_marginTop="170dp"
+            android:layout_marginLeft="259dp"
+            android:paddingBottom="@dimen/dp05"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp09"
+            android:includeFontPadding="false"
+            android:text="分享朋友圈"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

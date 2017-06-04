@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginTop="@dimen/dp08"
+        android:id="@+id/tv_water_oil_type"
+        android:text="干燥起皮"
+        android:textColor="@color/health_good"
+        android:textSize="@dimen/sp13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_water_oil_detail"
+        android:paddingTop="@dimen/dp05"
+        android:text="海口市的机房环境是东方会计师及地方及科技股份科技开始叫对方空间的即可根据房间号减肥的霍建华和海口市的机房环境是东方会计师及地方及科技股份科技开始叫对方空间的即可根据房间号减肥的霍建华和"
+        android:textColor="@color/gray_08"
+        android:lineSpacingExtra="@dimen/dp07"
+        android:includeFontPadding="false"
+        android:textSize="@dimen/sp13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_water_oil_solute"
+        android:paddingTop="@dimen/dp05"
+        android:text="护肤建议：跨境电商开放式空间的疯狂就看见看见谁看见对方空间的广泛的烦恼"
+        android:textColor="@color/gray_08"
+        android:lineSpacingExtra="@dimen/dp07"
+        android:includeFontPadding="false"
+        android:textSize="@dimen/sp13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

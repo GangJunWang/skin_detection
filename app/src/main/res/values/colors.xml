@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="project_color">#272831</color>
+
+    <color name="gruid_color">#E8E8E8</color>
+
+    <!-- 主色调（theme——bg） -->
+    <color name="t_color">#303134</color>
+    <color name="t_color_deep">#303134</color>
+    <!--辅助色1（antenna——bg）-->
+    <color name="a1_color">#dfbe22</color>
+    <color name="a1_color_deep">#dfbe22</color>
+    <!-- tab -->
+    <color name="tab_gray">#a9a9a9</color>
+    <color name="tab_blue">#dfbe22</color>
+
+    <!-- 健康 -->
+    <color name="health_default">#2B2D39</color>
+    <color name="health_default_other">#272b31</color>
+    <color name="health_moderate">#F9C164</color>
+    <color name="health_moderate_check">#FFF79B</color>
+    <color name="health_good">#60C1BD</color>
+    <color name="health_good_check">#8AFCF7</color>
+    <color name="health_serious">#EC6D6D</color>
+
+    <!-- 灰色 -->
+    <color name="gray">#7a7a7b</color>
+    <color name="gray_04">#333333</color>
+    <color name="gray_06">#666666</color>
+    <color name="gray_08">#999999</color>
+    <color name="gray_10">#c2c2c2</color>
+    <color name="gray_12">#d9d9d9</color>
+    <color name="gray_14">#f3f5f7</color>
+    <color name="gray_16">#f9fbfc</color>
+    <color name="gray_14_trans">#ccf3f5f7</color>
+    <color name="gray_18">#727171</color>
+    <color name="gray_20">#e1e1e1</color>
+    <color name="gray_22">#717071</color>
+    <color name="gray_24">#88898f</color>
+    <color name="gray_26">#4c4f5d</color>
+    <color name="gray_28">#c9c9c9</color>
+
+    <color name="main_menu_bg">#aa111213</color>
+    <color name="common_title_bg">#aa111213</color>
+    <color name="primary_title_text_color">#ff888888</color>
+    <color name="common_title_text">#ff565555</color>
+    <color name="common_text_yellow">#ffffe049</color>
+    <color name="album_item_bg">#fffcfcfd</color>
+    <color name="video_playter_bg">#333333</color>
+
+    <color name="dialog_bg_color">#F3F5F7</color>
+    <color name="dialog_text_color">#7a7a7b</color>
+    <color name="dialog_stroke_color">#999999</color>
+</resources>

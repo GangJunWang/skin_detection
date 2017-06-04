@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 滑动退出 -->
+    <declare-styleable name="SwipeBackLayout">
+        <attr name="edge_size" format="dimension" />
+        <attr name="edge_flag">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="bottom" value="2" />
+            <enum name="all" value="3" />
+        </attr>
+        <attr name="shadow_left" format="reference" />
+        <attr name="shadow_right" format="reference" />
+        <attr name="shadow_bottom" format="reference" />
+    </declare-styleable>
+
+    <attr name="SwipeBackLayoutStyle" format="reference" />
+    <!--LoadingOverLayView-->
+    <declare-styleable name="LoadingOverLayView">
+        <attr name="noDataText" format="string" />
+        <attr name="noDataBtn" format="string" />
+        <attr name="noDataImg" format="reference" />
+        <attr name="loadingLayoutMarginTop" format="dimension" />
+        <attr name="noDataLayoutMarginTop" format="dimension" />
+    </declare-styleable>
+
+    <!-- CircleImageView -->
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension"/>
+        <attr name="civ_border_color" format="color"/>
+        <attr name="civ_border_overlay" format="boolean"/>
+        <attr name="civ_fill_color" format="color"/>
+    </declare-styleable>
+    <!-- DynamicHeightImageView -->
+    <declare-styleable name="DynamicHeightImageView">
+        <attr name="ratio_width_point_value" format="integer" />
+        <attr name="ratio_height_point_value" format="integer" />
+    </declare-styleable>
+
+    <!-- 高斯模糊图片控件 -->
+    <declare-styleable name="BlurImageView">
+        <attr name="blur_radius" format="integer" />
+        <attr name="scale_ratio" format="integer" />
+        <attr name="memory_cache" format="boolean" />
+        <attr name="image_res" format="reference" />
+        <attr name="background_image_res" format="reference" />
+        <attr name="pre_show_local_origin_image" format="boolean" />
+        <attr name="enable_progress" format="boolean" />
+        <attr name="transition_animation" format="boolean" />
+    </declare-styleable>
+
+    <!--键盘切换控件-->
+    <declare-styleable name="KPSwitchPanelLayout">
+        <attr name="ignore_recommend_height" format="boolean" />
+    </declare-styleable>
+
+    <!-- 圆形进度条 -->
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color"/>
+        <attr name="roundProgressColor" format="color"/>
+        <attr name="roundWidth" format="dimension"></attr>
+        <attr name="progressWidth" format="dimension"></attr>
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="paddingS" format="dimension" />
+        <attr name="endRoundS" format="dimension" />
+        <attr name="max" format="integer"></attr>
+        <attr name="textIsDisplayable" format="boolean"></attr>
+        <attr name="mIsThumbEnabled" format="boolean"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+        <attr name="progress_style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="TempImageView">
+        <attr name="animat_id" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="FocusImageView">
+        <attr name="focus_focusing_id" format="integer" />
+        <attr name="focus_success_id" format="integer" />
+        <attr name="focus_fail_id" format="integer" />
+    </declare-styleable>
+</resources>

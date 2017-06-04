@@ -1,0 +1,235 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_tab_top_banner_pager" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp52"
+        android:background="#272831">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/common_icon_iogo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:tag="2"
+            android:layout_marginTop="@dimen/dp23"
+            android:id="@+id/ll_water_oil_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/dp116"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back_coner_shape" >
+
+                    <ImageView
+                        android:tag="2"
+                        android:layout_width="@dimen/dp30"
+                        android:layout_height="@dimen/dp30"
+                        android:src="@mipmap/common_btn_water_oil" />
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/TextViewBlackText_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp05"
+                    android:text="@string/wateroil_test" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp01"
+                    android:layout_marginTop="@dimen/dp05"
+                    android:background="#8b8c92" />
+
+                <TextView
+                    android:textSize="@dimen/sp10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp05"
+                    android:gravity="center_horizontal"
+                    android:textColor="#888889"
+                    android:text="轻松了解肌肤水分\n油分状态" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_skin_care_layout"
+                android:layout_width="@dimen/dp116"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp50"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back_coner_shape" >
+
+                    <ImageView
+                        android:tag="2"
+                        android:layout_width="@dimen/dp30"
+                        android:layout_height="@dimen/dp30"
+                        android:src="@mipmap/common_btn_cream" />
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/TextViewBlackText_13"
+                    android:textSize="@dimen/sp15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp05"
+                    android:text="@string/skincare_test" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp01"
+                    android:layout_marginTop="@dimen/dp05"
+                    android:background="#8b8c92" />
+
+                <TextView
+                    style="@style/TextViewGrayText_13"
+                    android:textSize="@dimen/sp10"
+                    android:textColor="#888889"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp05"
+                    android:gravity="center_horizontal"
+                    android:text="科学检测护肤品效果" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:tag="3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:layout_marginBottom="@dimen/dp23"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_skin_layout"
+                android:layout_width="@dimen/dp116"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back_coner_shape" >
+
+                    <ImageView
+                        android:tag="2"
+                        android:layout_width="@dimen/dp30"
+                        android:layout_height="@dimen/dp30"
+                        android:src="@mipmap/common_btn_skin" />
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/TextViewBlackText_13"
+                    android:textSize="@dimen/sp15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp05"
+                    android:text="@string/skin_test" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp01"
+                    android:layout_marginTop="@dimen/dp05"
+                    android:background="#8b8c92" />
+
+                <TextView
+                    style="@style/TextViewGrayText_13"
+                    android:textSize="@dimen/sp10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp05"
+                    android:textColor="#888889"
+                    android:gravity="center_horizontal"
+                    android:text="了解自己的肤质" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_skin_test_layout"
+                android:layout_width="@dimen/dp125"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp50"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back_coner_shape" >
+
+                    <ImageView
+                        android:tag="2"
+                        android:layout_width="@dimen/dp30"
+                        android:layout_height="@dimen/dp30"
+                        android:src="@mipmap/common_btn_skin_pk" />
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/TextViewBlackText_13"
+                    android:textSize="@dimen/sp15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp05"
+                    android:text="@string/skinpk_test" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp01"
+                    android:layout_marginTop="@dimen/dp05"
+                    android:background="#8b8c92" />
+
+                <TextView
+                    style="@style/TextViewGrayText_13"
+                    android:textSize="@dimen/sp10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp05"
+                    android:textColor="#888889"
+                    android:gravity="center_horizontal"
+                    android:text="自信的你敢于挑战别人" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

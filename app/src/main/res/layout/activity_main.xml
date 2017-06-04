@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="#dddddd"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+    </FrameLayout>
+
+    <RelativeLayout
+        xmlns:tl="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_line_horizontal" />
+
+        <com.shaojun.widget.tablayout.CommonTabLayout
+            android:id="@+id/mainTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:background="@drawable/common_tab_shape"
+            tl:tl_indicator_color="@color/t_color"
+            tl:tl_indicator_height="0dp"
+            tl:tl_textSelectColor="@color/health_good"
+            tl:tl_textUnselectColor="@color/tab_gray"
+            tl:tl_textsize="11sp"
+            tl:tl_underline_color="@color/t_color"
+            tl:tl_underline_height="0dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_01"
+        android:background="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+</LinearLayout>

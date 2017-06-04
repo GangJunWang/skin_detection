@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:scrollbars="none"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:paddingBottom="@dimen/dp15"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingTop="@dimen/dp22"
+            android:paddingBottom="@dimen/dp15"
+            android:orientation="horizontal"
+            android:background="#2b2d39"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/dp70"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.shaojun.widget.image.CircleProgressBar
+                    android:id="@+id/cp_skin_quality_pk_own"
+                    app:draw_progress_text="false"
+                    app:progress_background_color="#20F9C164"
+                    app:progress_start_color="@color/health_moderate"
+                    app:progress_text_color="@color/gray_06"
+                    app:progress_end_color="@color/health_moderate"
+                    app:line_width="@dimen/dp20"
+                    app:progress_stroke_width="@dimen/dp03"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp" />
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_skin_quality_girl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                            android:layout_width="50dip"
+                            android:layout_height="50dip"
+                            app:style="FILL"
+                            app:roundColor="@color/health_moderate"
+                            app:roundProgressColor="@color/health_moderate"
+                            app:textColor="#9A32CD"
+                            app:textIsDisplayable="false"
+                            app:roundWidth="2dip"
+                            app:textSize="18sp"/>
+
+                        <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                            android:id="@+id/rpb_skin_quality_girl_check"
+                            android:layout_width="50dip"
+                            android:layout_height="50dip"
+                            android:visibility="gone"
+                            app:style="STROKE"
+                            app:roundColor="@color/health_moderate_check"
+                            app:roundProgressColor="@color/health_moderate"
+                            app:textColor="#9A32CD"
+                            app:textIsDisplayable="false"
+                            app:roundWidth="3dip"
+                            app:textSize="18sp"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@mipmap/btn_icon_my_pk" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:textSize="@dimen/sp13"
+                        android:textColor="@color/health_moderate"
+                        android:layout_centerHorizontal="true"
+                        android:text="开始测试"
+                        android:layout_marginTop="@dimen/dp05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/dp30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/dp25"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="@dimen/sp12"
+                        android:textColor="@color/health_moderate"
+                        android:layout_marginLeft="@dimen/dp03"
+                        android:text="水分"
+                        android:includeFontPadding="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tv_skin_quality_boy_water"
+                        android:layout_marginTop="@dimen/dp02"
+                        android:textSize="@dimen/sp22"
+                        android:textColor="@color/health_moderate"
+                        android:text="00"
+                        android:includeFontPadding="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_marginTop="@dimen/dp02"
+                        android:layout_marginBottom="@dimen/dp02"
+                        android:background="@color/health_moderate"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp01" />
+
+                    <TextView
+                        android:id="@+id/tv_skin_quality_boy_oil"
+                        android:textSize="@dimen/sp22"
+                        android:layout_marginTop="@dimen/dp02"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/health_moderate"
+                        android:text="00"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="@dimen/sp12"
+                        android:textColor="@color/health_moderate"
+                        android:layout_marginTop="@dimen/dp02"
+                        android:includeFontPadding="false"
+                        android:layout_marginLeft="@dimen/dp03"
+                        android:text="油分"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/dp57"
+                    android:orientation="vertical"
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_01"
+                        android:textSize="@dimen/sp12"
+                        android:textColor="@color/health_moderate"
+                        android:text="%"
+                        android:layout_marginTop="@dimen/dp26"
+                        android:layout_marginLeft="@dimen/dp01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="@dimen/sp12"
+                        android:textColor="@color/health_moderate"
+                        android:text="%"
+                        android:layout_marginTop="@dimen/dp18"
+                        android:layout_marginLeft="@dimen/dp01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="#474957"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp30">
+
+            <TextView
+                android:id="@+id/tv_vs"
+                android:textSize="@dimen/sp18"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_vertical"
+                android:text="VS"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:id="@+id/rg_skin_quality_choose"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rbskin_quality_1"
+                    android:drawablePadding="@dimen/dp05"
+                    android:textColor="@android:color/white"
+                    android:background="@android:color/transparent"
+                    android:layout_marginLeft="@dimen/dp17"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/pk_check_drawable"
+                    android:text="闺蜜"
+                    android:textSize="@dimen/sp12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/rbskin_quality_2"
+                    android:drawablePadding="@dimen/dp05"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="@dimen/dp21"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:textSize="@dimen/sp12"
+                    android:drawableLeft="@drawable/pk_check_drawable"
+                    android:text="男朋友"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/rbskin_quality_3"
+                    android:drawablePadding="@dimen/dp05"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="@dimen/dp21"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:textSize="@dimen/sp12"
+                    android:drawableLeft="@drawable/pk_check_drawable"
+                    android:text="女朋友"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/rbskin_quality_4"
+                    android:drawablePadding="@dimen/dp05"
+                    android:textColor="@android:color/white"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:textSize="@dimen/sp12"
+                    android:layout_marginLeft="@dimen/dp21"
+                    android:drawableLeft="@drawable/pk_check_drawable"
+                    android:text="宝宝"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="@dimen/dp15"
+            android:paddingBottom="@dimen/dp15"
+            android:orientation="horizontal"
+            android:background="#2b2d39"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/dp70"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.shaojun.widget.image.CircleProgressBar
+                    android:id="@+id/cp_skin_quality_pk_other"
+                    app:draw_progress_text="false"
+                    app:progress_background_color="#2060C1BD"
+                    app:progress_start_color="@color/health_good"
+                    app:progress_text_color="@color/gray_06"
+                    app:progress_end_color="@color/health_good"
+                    app:line_width="@dimen/dp20"
+                    app:progress_stroke_width="@dimen/dp03"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_skin_quality_boy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                            android:layout_width="50dip"
+                            android:layout_height="50dip"
+                            app:style="FILL"
+                            app:roundColor="@color/health_good"
+                            app:roundProgressColor="@color/health_good"
+                            app:textColor="#9A32CD"
+                            app:textIsDisplayable="false"
+                            app:roundWidth="2dip"
+                            app:textSize="18sp"/>
+
+                        <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                            android:id="@+id/rpb_skin_quality_boy_check"
+                            android:layout_width="50dip"
+                            android:layout_height="50dip"
+                            android:visibility="gone"
+                            app:style="STROKE"
+                            app:roundColor="@color/health_good_check"
+                            app:roundProgressColor="@color/health_good"
+                            app:textColor="#9A32CD"
+                            app:textIsDisplayable="false"
+                            app:roundWidth="3dip"
+                            app:textSize="18sp"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@mipmap/btn_icon_else_pk" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:textSize="@dimen/sp13"
+                        android:textColor="@color/health_good"
+                        android:layout_centerHorizontal="true"
+                        android:text="开始测试"
+                        android:layout_marginTop="@dimen/dp05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/dp30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/dp25"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="@dimen/sp12"
+                        android:textColor="@color/health_good"
+                        android:layout_marginLeft="@dimen/dp03"
+                        android:text="水分"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tv_skin_quality_girl_water"
+                        android:layout_marginTop="@dimen/dp02"
+                        android:textSize="@dimen/sp22"
+                        android:textColor="@color/health_good"
+                        android:text="00"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_marginTop="@dimen/dp02"
+                        android:layout_marginBottom="@dimen/dp02"
+                        android:background="@color/health_good"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp01" />
+
+                    <TextView
+                        android:id="@+id/tv_skin_quality_girl_oil"
+                        android:textSize="@dimen/sp22"
+                        android:textColor="@color/health_good"
+                        android:layout_marginTop="@dimen/dp02"
+                        android:text="00"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="@dimen/sp12"
+                        android:textColor="@color/health_good"
+                        android:layout_marginTop="@dimen/dp02"
+                        android:layout_marginLeft="@dimen/dp03"
+                        android:text="油分"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/dp57"
+                    android:orientation="vertical"
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_02"
+                        android:textSize="@dimen/sp12"
+                        android:textColor="@color/health_good"
+                        android:text="%"
+                        android:layout_marginTop="@dimen/dp26"
+                        android:layout_marginLeft="@dimen/dp01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="@dimen/sp12"
+                        android:textColor="@color/health_good"
+                        android:text="%"
+                        android:layout_marginTop="@dimen/dp18"
+                        android:layout_marginLeft="@dimen/dp01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="#474957"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp26">
+
+            <TextView
+                android:layout_marginLeft="@dimen/dp17"
+                android:textSize="@dimen/sp14"
+                android:textColor="@android:color/white"
+                android:text="测试结果分析"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:background="#2b2d39"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp26">
+
+            <TextView
+                android:layout_marginLeft="@dimen/dp17"
+                android:textSize="@dimen/sp13"
+                android:textColor="@android:color/white"
+                android:text="我："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_skin_quality_own_water"
+                android:layout_marginLeft="@dimen/dp116"
+                android:textSize="@dimen/sp13"
+                android:textColor="@android:color/white"
+                android:text="未检测"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_skin_quality_own_oil"
+                android:layout_marginRight="@dimen/dp17"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/sp13"
+                android:textColor="@android:color/white"
+                android:text="未检测"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="#474957"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp26">
+
+            <TextView
+                android:id="@+id/tv_skin_quality_object"
+                android:layout_marginLeft="@dimen/dp17"
+                android:textSize="@dimen/sp13"
+                android:textColor="@android:color/white"
+                android:text="未选择："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_skin_quality_object_water"
+                android:layout_marginLeft="@dimen/dp116"
+                android:textSize="@dimen/sp13"
+                android:textColor="@android:color/white"
+                android:text="未检测"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_skin_quality_object_oil"
+                android:layout_marginRight="@dimen/dp17"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/sp13"
+                android:textColor="@android:color/white"
+                android:text="未检测"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_skin_quality_result"
+            android:textSize="@dimen/sp14"
+            android:textColor="@android:color/white"
+            android:text="查看结果"
+            android:layout_marginTop="@dimen/dp15"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:background="@drawable/project_color_shape"
+            android:layout_width="@dimen/dp105"
+            android:layout_height="@dimen/dp32" />
+
+    </LinearLayout>
+
+
+</ScrollView>

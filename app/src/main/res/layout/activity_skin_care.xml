@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:padding="@dimen/dp09"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/project_color" >
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/sp11"
+                android:lineSpacingExtra="@dimen/dp02"
+                android:textColor="@android:color/white"
+                android:text="首次测试前，请先清洁\n并保持肌肤在未使用护肤的状态"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:paddingTop="@dimen/dp11"
+            android:layout_marginLeft="@dimen/dp50"
+            android:textSize="@dimen/sp12"
+            android:textColor="@color/gray_22"
+            android:text="选择部位/目标效果"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp14"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginLeft="@dimen/dp50"
+                android:textSize="@dimen/sp12"
+                android:textColor="@color/gray_22"
+                android:text="@string/position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:layout_marginLeft="@dimen/dp25"
+                android:id="@+id/rg_skin_care_portion"
+                android:gravity="top"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rb_01"
+                    android:drawablePadding="@dimen/dp05"
+                    android:textSize="@dimen/sp12"
+                    android:textColor="@color/gray_22"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/skin_care_check"
+                    android:text="脸部"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/rb_02"
+                    android:layout_marginLeft="@dimen/dp21"
+                    android:drawablePadding="@dimen/dp05"
+                    android:button="@null"
+                    android:textSize="@dimen/sp12"
+                    android:textColor="@color/gray_22"
+                    android:drawableLeft="@drawable/skin_care_check"
+                    android:text="眼部"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/rb_03"
+                    android:layout_marginLeft="@dimen/dp21"
+                    android:drawablePadding="@dimen/dp05"
+                    android:button="@null"
+                    android:textSize="@dimen/sp12"
+                    android:textColor="@color/gray_22"
+                    android:drawableLeft="@drawable/skin_care_check"
+                    android:text="手部"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingBottom="@dimen/dp11"
+            android:layout_marginTop="@dimen/dp14"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginLeft="@dimen/dp50"
+                android:textSize="@dimen/sp12"
+                android:textColor="@color/gray_22"
+                android:text="目标效果："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:layout_marginLeft="@dimen/dp25"
+                android:id="@+id/rg_skin_care_aim"
+                android:gravity="top"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rb_skin_care_water"
+                    android:drawablePadding="@dimen/dp05"
+                    android:textSize="@dimen/sp12"
+                    android:textColor="@color/gray_22"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/skin_care_check"
+                    android:text="补水"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/rb_skin_care_oil"
+                    android:layout_marginLeft="@dimen/dp21"
+                    android:drawablePadding="@dimen/dp05"
+                    android:button="@null"
+                    android:textSize="@dimen/sp12"
+                    android:textColor="@color/gray_22"
+                    android:drawableLeft="@drawable/skin_care_check"
+                    android:text="控油"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:orientation="vertical"
+            android:background="#e0e0e0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:paddingLeft="@dimen/dp50"
+                android:paddingRight="@dimen/dp50"
+                android:layout_marginTop="@dimen/dp15"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_width="30dip"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                            android:layout_width="30dip"
+                            android:layout_height="30dip"
+                            app:style="FILL"
+                            app:roundColor="@color/health_good"
+                            app:roundProgressColor="@color/health_moderate"
+                            app:textColor="#9A32CD"
+                            app:textIsDisplayable="false"
+                            app:roundWidth="1dip"
+                            app:textSize="18sp"/>
+
+                        <TextView
+                            android:textSize="@dimen/sp14"
+                            android:textColor="@android:color/white"
+                            android:text="1"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_marginTop="@dimen/dp05"
+                        android:textSize="@dimen/sp09"
+                        android:textColor="@color/gray_06"
+                        android:gravity="center_horizontal"
+                        android:text="护肤前测试"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:background="@color/project_color"
+                        android:layout_marginTop="@dimen/dp14"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp01" />
+
+                    <View
+                        android:visibility="gone"
+                        android:id="@+id/v_skin_care_one"
+                        android:background="@color/health_good"
+                        android:layout_marginTop="@dimen/dp13"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp05" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_width="30dip"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                            android:id="@+id/rpb_skin_care_two"
+                            android:layout_width="30dip"
+                            android:layout_height="30dip"
+                            app:style="STROKE"
+                            app:roundColor="@color/project_color"
+                            app:roundProgressColor="@color/health_moderate"
+                            app:textColor="#9A32CD"
+                            app:textIsDisplayable="false"
+                            app:roundWidth="1dip"
+                            app:textSize="18sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_skin_care_two"
+                            android:textSize="@dimen/sp14"
+                            android:textColor="@color/project_color"
+                            android:text="2"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_marginTop="@dimen/dp05"
+                        android:textSize="@dimen/sp09"
+                        android:textColor="@color/gray_06"
+                        android:gravity="center_horizontal"
+                        android:text="护肤完成"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:background="@color/project_color"
+                        android:layout_marginTop="@dimen/dp14"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp01" />
+
+                    <View
+                        android:id="@+id/v_skin_care_two"
+                        android:visibility="gone"
+                        android:background="@color/health_good"
+                        android:layout_marginTop="@dimen/dp13"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp05" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_width="30dip"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                            android:id="@+id/rpb_skin_care_three"
+                            android:layout_width="30dip"
+                            android:layout_height="30dip"
+                            app:style="STROKE"
+                            app:roundColor="@color/project_color"
+                            app:roundProgressColor="@color/health_moderate"
+                            app:textColor="#9A32CD"
+                            app:textIsDisplayable="false"
+                            app:roundWidth="1dip"
+                            app:textSize="18sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_skin_care_three"
+                            android:textSize="@dimen/sp14"
+                            android:textColor="@color/project_color"
+                            android:text="3"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_marginTop="@dimen/dp05"
+                        android:textSize="@dimen/sp09"
+                        android:textColor="@color/gray_06"
+                        android:gravity="center_horizontal"
+                        android:text="护肤后测试"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginLeft="@dimen/dp50"
+                android:layout_marginRight="@dimen/dp50"
+                android:layout_marginTop="@dimen/dp15"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp0.5"
+                android:background="@color/gray_24" />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/dp45"
+                    android:layout_width="@dimen/dp08"
+                    android:layout_height="@dimen/dp15"
+                    android:src="@mipmap/content_icon_bg" />
+
+                <TextView
+                    android:layout_marginLeft="@dimen/dp05"
+                    android:textSize="@dimen/sp13"
+                    android:textColor="@color/gray_22"
+                    android:text="护肤前测试"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginLeft="@dimen/dp50"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_skin_care_one"
+                    android:gravity="bottom"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_skin_care_one_progress"
+                        android:textSize="@dimen/sp20"
+                        android:textColor="#333541"
+                        android:text="00"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="@dimen/sp11"
+                        android:textColor="#333541"
+                        android:text="%"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/dp05"
+                    android:layout_marginRight="@dimen/dp50"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                            android:id="@+id/rpb_skin_care_first_left"
+                            android:layout_width="10dip"
+                            android:layout_height="10dip"
+                            app:style="STROKE"
+                            app:progress_style="STROKE"
+                            app:roundColor="@color/project_color"
+                            app:roundProgressColor="@color/health_moderate"
+                            app:textColor="#9A32CD"
+                            app:textIsDisplayable="false"
+                            app:roundWidth="1dip"
+                            app:textSize="18sp"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+
+                        <View
+                            android:background="@color/project_color"
+                            android:layout_width="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_height="@dimen/dp01" />
+
+                        <View
+                            android:id="@+id/v_skin_care_one_progress"
+                            android:background="@drawable/healthy_good_coner_shape"
+                            android:layout_width="0dp"
+                            android:layout_centerVertical="true"
+                            android:layout_height="@dimen/dp05" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                            android:id="@+id/rpb_skin_care_first_right"
+                            android:layout_width="10dip"
+                            android:layout_height="10dip"
+                            android:background="@color/gray_12"
+                            app:style="STROKE"
+                            app:roundColor="@color/project_color"
+                            app:roundProgressColor="@color/health_moderate"
+                            app:textColor="#9A32CD"
+                            app:textIsDisplayable="false"
+                            app:roundWidth="1dip"
+                            app:textSize="18sp"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_skin_care_water_before"
+                    android:textSize="@dimen/sp11"
+                    android:layout_marginTop="@dimen/dp05"
+                    android:textColor="@color/gray_06"
+                    android:text="护肤前"
+                    android:layout_marginRight="@dimen/dp50"
+                    android:layout_gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/dp45"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/dp08"
+                    android:layout_height="@dimen/dp15"
+                    android:src="@mipmap/content_icon_bg" />
+
+                <TextView
+                    android:id="@+id/tv_skin_care_start"
+                    android:textSize="@dimen/sp12"
+                    android:layout_marginLeft="@dimen/dp05"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/healthy_detection"
+                    android:gravity="center"
+                    android:text="开始测试"
+                    android:layout_width="@dimen/dp75"
+                    android:layout_height="@dimen/dp24" />
+
+                <TextView
+                    android:id="@+id/tv_skin_care_tip"
+                    android:visibility="gone"
+                    android:textSize="@dimen/sp11"
+                    android:textColor="@color/gray_24"
+                    android:layout_marginLeft="@dimen/dp08"
+                    android:text="护肤后点击按钮"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="@dimen/dp10"
+                android:textSize="@dimen/sp13"
+                android:textColor="@color/gray_22"
+                android:layout_marginLeft="@dimen/dp50"
+                android:text="护肤后测试"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginLeft="@dimen/dp45"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_skin_care_two"
+                    android:gravity="bottom"
+                    android:layout_marginLeft="@dimen/dp22"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_skin_care_two_progress"
+                        android:textSize="@dimen/sp20"
+                        android:textColor="#333541"
+                        android:text="00"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="@dimen/sp11"
+                        android:textColor="#333541"
+                        android:text="%"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginRight="@dimen/dp50"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp08"
+                        android:layout_height="@dimen/dp15"
+                        android:src="@mipmap/content_icon_bg" />
+
+                    <RelativeLayout
+                        android:layout_marginLeft="@dimen/dp05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                            android:id="@+id/rpb_skin_care_two_left"
+                            android:layout_width="10dip"
+                            android:layout_height="10dip"
+                            android:background="@color/gray_12"
+                            app:style="STROKE"
+                            app:roundColor="@color/project_color"
+                            app:roundProgressColor="@color/health_moderate"
+                            app:textColor="#9A32CD"
+                            app:textIsDisplayable="false"
+                            app:roundWidth="1dip"
+                            app:textSize="18sp"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+
+                        <View
+                            android:background="@color/project_color"
+                            android:layout_width="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_height="@dimen/dp01" />
+
+                        <View
+                            android:id="@+id/v_skin_care_two_progress"
+                            android:background="@drawable/healthy_good_coner_shape"
+                            android:layout_width="0dp"
+                            android:layout_centerVertical="true"
+                            android:layout_height="@dimen/dp05" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                            android:id="@+id/rpb_skin_care_two_right"
+                            android:layout_width="10dip"
+                            android:layout_height="10dip"
+                            android:background="@color/gray_12"
+                            app:style="STROKE"
+                            app:roundColor="@color/project_color"
+                            app:roundProgressColor="@color/health_moderate"
+                            app:textColor="#9A32CD"
+                            app:textIsDisplayable="false"
+                            app:roundWidth="1dip"
+                            app:textSize="18sp"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_skin_care_water_after"
+                    android:layout_marginTop="@dimen/dp05"
+                    android:layout_marginRight="@dimen/dp50"
+                    android:textSize="@dimen/sp11"
+                    android:textColor="@color/gray_06"
+                    android:text="护肤后"
+                    android:layout_marginBottom="@dimen/dp15"
+                    android:layout_gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/project_color"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="@dimen/sp13"
+                android:layout_marginTop="@dimen/dp07"
+                android:textColor="@android:color/white"
+                android:text="测试结果分析"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:paddingLeft="@dimen/dp17"
+                android:paddingRight="@dimen/dp17"
+                android:paddingTop="@dimen/dp07"
+                android:paddingBottom="@dimen/dp07"
+                android:layout_marginTop="@dimen/dp05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#474957">
+
+                <TextView
+                    android:textSize="@dimen/sp13"
+                    android:textColor="@android:color/white"
+                    android:text="护肤前："
+                    android:includeFontPadding="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_skin_care_before_result"
+                    android:textSize="@dimen/sp13"
+                    android:textColor="@color/health_good"
+                    android:text="未测试"
+                    android:includeFontPadding="false"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_skin_care_before_value"
+                    android:textSize="@dimen/sp13"
+                    android:textColor="@android:color/white"
+                    android:text="无值"
+                    android:layout_alignParentRight="true"
+                    android:includeFontPadding="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:paddingLeft="@dimen/dp17"
+                android:paddingRight="@dimen/dp17"
+                android:paddingTop="@dimen/dp06"
+                android:paddingBottom="@dimen/dp06"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:textSize="@dimen/sp13"
+                    android:textColor="@android:color/white"
+                    android:text="护肤后："
+                    android:includeFontPadding="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_skin_care_after_result"
+                    android:textSize="@dimen/sp13"
+                    android:textColor="@color/health_good"
+                    android:text="未测试"
+                    android:includeFontPadding="false"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_skin_care_after_value"
+                    android:textSize="@dimen/sp13"
+                    android:textColor="@android:color/white"
+                    android:text="无值"
+                    android:layout_alignParentRight="true"
+                    android:includeFontPadding="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:paddingLeft="@dimen/dp17"
+                android:paddingRight="@dimen/dp17"
+                android:paddingTop="@dimen/dp06"
+                android:paddingBottom="@dimen/dp06"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#474957">
+
+                <TextView
+                    android:id="@+id/tv_skin_care_effect"
+                    android:textSize="@dimen/sp13"
+                    android:textColor="@android:color/white"
+                    android:text="补水效果："
+                    android:includeFontPadding="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_skin_care_difference_value"
+                    android:textSize="@dimen/sp13"
+                    android:textColor="@android:color/white"
+                    android:text="无值"
+                    android:layout_alignParentRight="true"
+                    android:includeFontPadding="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_skin_care_result"
+                android:layout_marginLeft="@dimen/dp15"
+                android:textSize="@dimen/sp13"
+                android:layout_marginTop="@dimen/dp07"
+                android:textColor="@android:color/white"
+                android:text="测试后得出结论"
+                android:includeFontPadding="false"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp45" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

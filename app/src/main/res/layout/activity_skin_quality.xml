@@ -1,0 +1,1349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#ddd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingLeft="@dimen/dp20"
+            android:paddingTop="@dimen/dp23"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:tag="value"
+                    app:style="FILL"
+                    app:roundColor="@color/health_good"
+                    app:roundProgressColor="@color/health_moderate"
+                    app:textColor="#9A32CD"
+                    app:textIsDisplayable="false"
+                    app:roundWidth="1dip"
+                    app:textSize="18sp"/>
+
+                <TextView
+                    android:tag="1"
+                    android:textSize="@dimen/sp09"
+                    android:textColor="@android:color/white"
+                    android:text="1"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginLeft="@dimen/dp10"
+                style="@style/TextViewBlackText_15"
+                android:textSize="@dimen/dp13"
+                android:textColor="#333541"
+                android:text="脸部水油检测"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:background="@color/health_good"
+            android:layout_marginLeft="@dimen/dp29"
+            android:layout_width="@dimen/dp01"
+            android:layout_height="@dimen/dp20" />
+
+        <TextView
+            android:id="@+id/tv_skin_quality_head_title"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/dp11"
+            android:textStyle="bold"
+            android:text="\n"
+            android:textColor="@color/health_good"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/dp05"
+                android:layout_centerHorizontal="true"
+                android:layout_width="@dimen/dp180"
+                android:layout_height="@dimen/dp180">
+
+                <ImageView
+                    android:layout_width="@dimen/dp93"
+                    android:layout_height="@dimen/dp93"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/bg_head_portrait_3" />
+
+                <RelativeLayout
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                        android:id="@+id/rpb_skin_quality_head"
+                        android:layout_width="36dip"
+                        android:layout_height="36dip"
+                        app:style="FILL"
+                        app:progress_style="STROKE"
+                        app:roundColor="@color/gray_14"
+                        app:roundProgressColor="#707179"
+                        app:textColor="#9A32CD"
+                        app:textIsDisplayable="false"
+                        app:roundWidth="1dip"
+                        app:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_skin_quality_head"
+                        android:layout_centerInParent="true"
+                        style="@style/TextViewBlackText_11"
+                        android:textSize="@dimen/dp13"
+                        android:textColor="#333541"
+                        android:text="额头"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/dp49"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                        android:id="@+id/rpb_skin_quality_right_face"
+                        android:layout_width="36dip"
+                        android:layout_height="36dip"
+                        app:style="FILL"
+                        app:progress_style="STROKE"
+                        app:roundColor="@android:color/white"
+                        app:roundProgressColor="@color/project_color"
+                        app:textColor="#9A32CD"
+                        app:textIsDisplayable="false"
+                        app:roundWidth="1dip"
+                        app:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_skin_quality_right_face"
+                        android:layout_centerInParent="true"
+                        style="@style/TextViewBlackText_11"
+                        android:textSize="@dimen/dp13"
+                        android:textColor="#333541"
+                        android:text="右脸"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/dp49"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                        android:id="@+id/rpb_skin_quality_left_face"
+                        android:layout_width="36dip"
+                        android:layout_height="36dip"
+                        app:style="FILL"
+                        app:progress_style="STROKE"
+                        app:roundColor="@android:color/white"
+                        app:roundProgressColor="@color/project_color"
+                        app:textColor="#9A32CD"
+                        app:textIsDisplayable="false"
+                        app:roundWidth="1dip"
+                        app:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_skin_quality_left_face"
+                        android:layout_centerInParent="true"
+                        style="@style/TextViewBlackText_11"
+                        android:textSize="@dimen/dp13"
+                        android:textColor="#333541"
+                        android:text="左脸"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginBottom="@dimen/dp12"
+                    android:layout_marginLeft="@dimen/dp17"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                        android:id="@+id/rpb_skin_quality_left_mandible"
+                        android:layout_width="36dip"
+                        android:layout_height="36dip"
+                        app:style="FILL"
+                        app:progress_style="STROKE"
+                        app:roundColor="@android:color/white"
+                        app:roundProgressColor="@color/project_color"
+                        app:textColor="#9A32CD"
+                        app:textIsDisplayable="false"
+                        app:roundWidth="1dip"
+                        app:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_skin_quality_left_mandible"
+                        android:layout_centerInParent="true"
+                        style="@style/TextViewBlackText_11"
+                        android:textSize="@dimen/dp13"
+                        android:textColor="#333541"
+                        android:text="下颚"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginBottom="@dimen/dp12"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp17"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                        android:id="@+id/rpb_skin_quality_left_nose"
+                        android:layout_width="36dip"
+                        android:layout_height="36dip"
+                        app:style="FILL"
+                        app:progress_style="STROKE"
+                        app:roundColor="@android:color/white"
+                        app:roundProgressColor="@color/project_color"
+                        app:textColor="#9A32CD"
+                        app:textIsDisplayable="false"
+                        app:roundWidth="1dip"
+                        app:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_skin_quality_left_nose"
+                        android:layout_centerInParent="true"
+                        style="@style/TextViewBlackText_11"
+                        android:textSize="@dimen/dp13"
+                        android:textColor="#333541"
+                        android:text="鼻子"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="23dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:tag="1"
+                        app:style="FILL"
+                        app:progress_style="STROKE"
+                        app:roundColor="@android:color/white"
+                        app:roundProgressColor="#707179"
+                        app:textColor="#9A32CD"
+                        app:textIsDisplayable="false"
+                        app:roundWidth="1dip"
+                        app:textSize="18sp"/>
+
+                    <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                        android:layout_marginLeft="53dp"
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:tag="11"
+                        app:style="FILL"
+                        app:progress_style="STROKE"
+                        app:roundColor="@android:color/white"
+                        app:roundProgressColor="#707179"
+                        app:textColor="#9A32CD"
+                        app:textIsDisplayable="false"
+                        app:roundWidth="1dip"
+                        app:textSize="18sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="38dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:tag="2"
+                        app:style="FILL"
+                        app:progress_style="STROKE"
+                        app:roundColor="@android:color/white"
+                        app:roundProgressColor="#707179"
+                        app:textColor="#9A32CD"
+                        app:textIsDisplayable="false"
+                        app:roundWidth="1dip"
+                        app:textSize="18sp"/>
+
+                    <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                        android:layout_marginLeft="100dp"
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:tag="10"
+                        app:style="FILL"
+                        app:progress_style="STROKE"
+                        app:roundColor="@android:color/white"
+                        app:roundProgressColor="#707179"
+                        app:textColor="#9A32CD"
+                        app:textIsDisplayable="false"
+                        app:roundWidth="1dip"
+                        app:textSize="18sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="50dp"
+                    android:gravity="center_horizontal"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:tag="4"
+                        app:style="FILL"
+                        app:progress_style="STROKE"
+                        app:roundColor="@android:color/white"
+                        app:roundProgressColor="#707179"
+                        app:textColor="#9A32CD"
+                        app:textIsDisplayable="false"
+                        app:roundWidth="1dip"
+                        app:textSize="18sp"/>
+
+                    <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                        android:layout_marginLeft="145dp"
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:tag="8"
+                        app:style="FILL"
+                        app:progress_style="STROKE"
+                        app:roundColor="@android:color/white"
+                        app:roundProgressColor="#707179"
+                        app:textColor="#9A32CD"
+                        app:textIsDisplayable="false"
+                        app:roundWidth="1dip"
+                        app:textSize="18sp"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_marginBottom="76dp"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_marginLeft="@dimen/dp05"
+                        android:tag="3"
+                        app:style="FILL"
+                        app:progress_style="STROKE"
+                        app:roundColor="@android:color/white"
+                        app:roundProgressColor="#707179"
+                        app:textColor="#9A32CD"
+                        app:textIsDisplayable="false"
+                        app:roundWidth="1dip"
+                        app:textSize="18sp"/>
+
+                    <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:tag="9"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/dp05"
+                        app:style="FILL"
+                        app:progress_style="STROKE"
+                        app:roundColor="@android:color/white"
+                        app:roundProgressColor="#707179"
+                        app:textColor="#9A32CD"
+                        app:textIsDisplayable="false"
+                        app:roundWidth="1dip"
+                        app:textSize="18sp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_marginLeft="@dimen/dp55"
+                        android:tag="5"
+                        app:style="FILL"
+                        app:progress_style="STROKE"
+                        app:roundColor="@android:color/white"
+                        app:roundProgressColor="#707179"
+                        app:textColor="#9A32CD"
+                        app:textIsDisplayable="false"
+                        app:roundWidth="1dip"
+                        app:textSize="18sp"/>
+
+                    <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/dp55"
+                        android:tag="7"
+                        app:style="FILL"
+                        app:progress_style="STROKE"
+                        app:roundColor="@android:color/white"
+                        app:roundProgressColor="#707179"
+                        app:textColor="#9A32CD"
+                        app:textIsDisplayable="false"
+                        app:roundWidth="1dip"
+                        app:textSize="18sp"/>
+
+                    <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_marginTop="@dimen/dp05"
+                        android:layout_centerHorizontal="true"
+                        android:tag="6"
+                        app:style="FILL"
+                        app:progress_style="STROKE"
+                        app:roundColor="@android:color/white"
+                        app:roundProgressColor="#707179"
+                        app:textColor="#9A32CD"
+                        app:textIsDisplayable="false"
+                        app:roundWidth="1dip"
+                        app:textSize="18sp"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_skin_quality_right_face_title"
+                    style="@style/TextViewBlackText_11"
+                    android:textStyle="bold"
+                    android:textColor="@color/health_good"
+                    android:layout_marginLeft="70dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_skin_quality_left_face_title"
+                    style="@style/TextViewBlackText_11"
+                    android:layout_alignParentRight="true"
+                    android:textStyle="bold"
+                    android:layout_marginRight="70dp"
+                    android:textColor="@color/health_good"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="175dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_skin_quality_mandible_title"
+                    style="@style/TextViewBlackText_11"
+                    android:textColor="@color/health_good"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="70dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_skin_quality_nose_title"
+                    style="@style/TextViewBlackText_11"
+                    android:layout_marginRight="70dp"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/health_good"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_gravity="center_horizontal"
+            style="@style/TextViewBlackText_15"
+            android:textColor="#727171"
+            android:textSize="@dimen/dp13"
+            android:text="请选择检测部位"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dp24"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:background="#474957"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:background="@color/health_good"
+                    android:layout_marginLeft="@dimen/dp29"
+                    android:layout_width="@dimen/dp01"
+                    android:layout_height="@dimen/dp36" />
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp36" >
+
+                    <RelativeLayout
+                        android:layout_marginLeft="@dimen/dp20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                            android:layout_width="17dip"
+                            android:layout_height="17dip"
+                            android:tag="value"
+                            app:style="FILL"
+                            app:roundColor="@color/health_good"
+                            app:roundProgressColor="@color/health_moderate"
+                            app:textColor="#9A32CD"
+                            app:textIsDisplayable="false"
+                            app:roundWidth="1dip"
+                            app:textSize="18sp"/>
+
+                        <TextView
+                            android:tag="2"
+                            android:textSize="@dimen/sp09"
+                            android:textColor="@android:color/white"
+                            android:text="2"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/dp10"
+                        style="@style/TextViewBlackText_15"
+                        android:textSize="@dimen/sp13"
+                        android:textColor="@color/health_good"
+                        android:text="肌肤问题测试"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:paddingRight="@dimen/dp22"
+                android:id="@+id/ll_skin_quality_topic"
+                android:layout_marginTop="@dimen/dp36"
+                android:paddingLeft="@dimen/dp50"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp10"
+                    style="@style/TextViewBlackText_15"
+                    android:textSize="@dimen/sp11"
+                    android:textColor="@color/gray_06"
+                    android:text="Q1.如果不用保温产品或防晒产品，你的面部皮肤："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioGroup
+                    android:id="@+id/rg_skin_quality_choose_q1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q1_a"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:textSize="@dimen/sp12"
+                        android:textColor="@color/gray_06"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="A.感觉很干"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q1_b"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:button="@null"
+                        android:textSize="@dimen/sp12"
+                        android:textColor="@color/gray_06"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="B.感觉紧绷"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q1_c"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:button="@null"
+                        android:textSize="@dimen/sp12"
+                        android:textColor="@color/gray_06"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="C.感觉正常"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q1_d"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:button="@null"
+                        android:textSize="@dimen/sp12"
+                        android:textColor="@color/gray_06"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="D.看起来有光亮"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />\
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q1_e"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:button="@null"
+                        android:textSize="@dimen/sp12"
+                        android:textColor="@color/gray_06"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="E.不知道"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp10"
+                    style="@style/TextViewBlackText_15"
+                    android:textSize="@dimen/sp11"
+                    android:textColor="@color/gray_06"
+                    android:text="Q2.如果让你描述自己的面部皮肤特征，你回选择："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioGroup
+                    android:id="@+id/rg_skin_quality_choose_q2"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q2_a"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:textColor="@color/gray_06"
+                        android:button="@null"
+                        android:textSize="@dimen/sp12"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="A.很干"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q2_b"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:button="@null"
+                        android:textSize="@dimen/sp12"
+                        android:textColor="@color/gray_06"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="B.不干不油"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q2_c"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:button="@null"
+                        android:textSize="@dimen/sp12"
+                        android:textColor="@color/gray_06"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="C.有时候油有时候干"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q2_d"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:button="@null"
+                        android:textSize="@dimen/sp12"
+                        android:textColor="@color/gray_06"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="D.油"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp10"
+                    style="@style/TextViewBlackText_15"
+                    android:textSize="@dimen/sp11"
+                    android:textColor="@color/gray_06"
+                    android:text="Q3.使用洁面产品洗脸后，你感觉："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioGroup
+                    android:id="@+id/rg_skin_quality_choose_q3"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q3_a"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:textColor="@color/gray_06"
+                        android:button="@null"
+                        android:textSize="@dimen/sp12"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="A.干燥、刺痛"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q3_b"
+                        android:drawablePadding="@dimen/dp04"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:button="@null"
+                        android:textColor="@color/gray_06"
+                        android:textSize="@dimen/sp12"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="B.有些干燥单没有刺痛"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q3_c"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:button="@null"
+                        android:textColor="@color/gray_06"
+                        android:textSize="@dimen/sp12"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="C.没有异常"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q3_d"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:button="@null"
+                        android:textColor="@color/gray_06"
+                        android:textSize="@dimen/sp12"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="D.皮肤出油"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q3_e"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:button="@null"
+                        android:textColor="@color/gray_06"
+                        android:textSize="@dimen/sp12"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="E.我从不使用皂类或其他泡泡类的洁面产品"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp10"
+                    style="@style/TextViewBlackText_15"
+                    android:textSize="@dimen/sp11"
+                    android:textColor="@color/gray_06"
+                    android:text="Q4.不使用保湿产品，你的脸觉得干吗："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioGroup
+                    android:id="@+id/rg_skin_quality_choose_q4"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q4_a"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:textColor="@color/gray_06"
+                        android:button="@null"
+                        android:textSize="@dimen/sp12"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="A.总是如此"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q4_b"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:button="@null"
+                        android:textColor="@color/gray_06"
+                        android:textSize="@dimen/sp12"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="B.有时"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q4_c"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:button="@null"
+                        android:textColor="@color/gray_06"
+                        android:textSize="@dimen/sp12"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="C.很少"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q4_d"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:button="@null"
+                        android:textColor="@color/gray_06"
+                        android:textSize="@dimen/sp12"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="D.从不"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp10"
+                    style="@style/TextViewBlackText_15"
+                    android:textSize="@dimen/sp11"
+                    android:textColor="@color/gray_06"
+                    android:text="Q5.T区（前额和鼻子一带）出油吗："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioGroup
+                    android:id="@+id/rg_skin_quality_choose_q5"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q5_a"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:textColor="@color/gray_06"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="A.从没有油"
+                        android:textSize="@dimen/sp12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q5_b"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:button="@null"
+                        android:textColor="@color/gray_06"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="B.有时候会有出油现象"
+                        android:textSize="@dimen/sp12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q5_c"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:button="@null"
+                        android:textColor="@color/gray_06"
+                        android:textSize="@dimen/sp12"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="C.经常有出油现象"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q5_d"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:button="@null"
+                        android:textColor="@color/gray_06"
+                        android:textSize="@dimen/sp12"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="D.总是油油的"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp10"
+                    style="@style/TextViewBlackText_15"
+                    android:textSize="@dimen/sp11"
+                    android:textColor="@color/gray_06"
+                    android:text="Q6.护肤产品会引发潮红、痒或刺痛吗："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioGroup
+                    android:id="@+id/rg_skin_quality_choose_q6"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q6_a"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:textColor="@color/gray_06"
+                        android:textSize="@dimen/sp12"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="A.从不"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q6_b"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:button="@null"
+                        android:textColor="@color/gray_06"
+                        android:textSize="@dimen/sp12"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="B.有时"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q6_c"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:button="@null"
+                        android:textColor="@color/gray_06"
+                        android:textSize="@dimen/sp12"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="C.经常"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q6_d"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:button="@null"
+                        android:textColor="@color/gray_06"
+                        android:textSize="@dimen/sp12"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="D.总是"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q6_e"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:button="@null"
+                        android:textColor="@color/gray_06"
+                        android:textSize="@dimen/sp12"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="E.我从不用这类产品"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp10"
+                    style="@style/TextViewBlackText_15"
+                    android:textSize="@dimen/sp11"
+                    android:textColor="@color/gray_06"
+                    android:text="Q7.防晒产品令你的皮肤发痒、灼烧、发痘或发红吗："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioGroup
+                    android:id="@+id/rg_skin_quality_choose_q7"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q7_a"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:textColor="@color/gray_06"
+                        android:button="@null"
+                        android:textSize="@dimen/sp12"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="A.从不"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q7_b"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:button="@null"
+                        android:textColor="@color/gray_06"
+                        android:textSize="@dimen/sp12"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="B.很少"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q7_c"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:button="@null"
+                        android:textColor="@color/gray_06"
+                        android:textSize="@dimen/sp12"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="C.经常"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q7_d"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:button="@null"
+                        android:textColor="@color/gray_06"
+                        android:textSize="@dimen/sp12"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="D.总是如此"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q7_e"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:button="@null"
+                        android:textColor="@color/gray_06"
+                        android:textSize="@dimen/sp12"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="E.我从不使用防晒霜"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp10"
+                    style="@style/TextViewBlackText_15"
+                    android:textSize="@dimen/sp11"
+                    android:textColor="@color/gray_06"
+                    android:text="Q8.芳香泡泡浴、按摩油或是身体润肤霜令你的皮肤发痘、发痒或感觉干燥吗："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioGroup
+                    android:id="@+id/rg_skin_quality_choose_q8"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q8_a"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:textColor="@color/gray_06"
+                        android:textSize="@dimen/sp12"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="A.从不"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q8_b"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:button="@null"
+                        android:textColor="@color/gray_06"
+                        android:textSize="@dimen/sp12"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="B.有时"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q8_c"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:button="@null"
+                        android:textColor="@color/gray_06"
+                        android:textSize="@dimen/sp12"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="C.经常"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q8_d"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:button="@null"
+                        android:textColor="@color/gray_06"
+                        android:textSize="@dimen/sp12"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="D.总是"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q8_e"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:button="@null"
+                        android:textColor="@color/gray_06"
+                        android:textSize="@dimen/sp12"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="E.我从不用这类产品"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tv_skin_quality_title_09"
+                    android:layout_marginTop="@dimen/dp10"
+                    style="@style/TextViewBlackText_15"
+                    android:textSize="@dimen/sp13"
+                    android:textColor="@color/gray_06"
+                    android:text="Q9.你因为涂了彩妆、防晒霜或其他护肤品发生发红、发痒或面部肿胀吗"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioGroup
+                    android:id="@+id/rg_skin_quality_choose_q9"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q9_a"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:textColor="@color/gray_06"
+                        android:textSize="@dimen/sp12"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="A.从不"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q9_b"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:button="@null"
+                        android:textColor="@color/gray_06"
+                        android:textSize="@dimen/sp12"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="B.有时"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q9_c"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:button="@null"
+                        android:textColor="@color/gray_06"
+                        android:textSize="@dimen/sp12"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="C.经常"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q9_d"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:button="@null"
+                        android:textColor="@color/gray_06"
+                        android:textSize="@dimen/sp12"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="D.总是这样"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/rb_skin_quality_q9_e"
+                        android:drawablePadding="@dimen/dp05"
+                        android:layout_marginTop="@dimen/dp06"
+                        android:button="@null"
+                        android:textColor="@color/gray_06"
+                        android:textSize="@dimen/sp12"
+                        android:drawableLeft="@drawable/check_drawable_good"
+                        android:text="E.我从不用这些东西"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_marginBottom="@dimen/dp15"
+                android:id="@+id/rl_skin_quality_board"
+                android:background="@mipmap/common_analyze_baseboard"
+                android:layout_width="match_parent"
+                android:layout_height="332dp">
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="@dimen/dp40"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_marginLeft="@dimen/dp05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                            android:layout_width="17dip"
+                            android:layout_height="17dip"
+                            android:tag="value"
+                            app:style="FILL"
+                            app:roundColor="@color/health_good"
+                            app:roundProgressColor="@color/health_moderate"
+                            app:textColor="#9A32CD"
+                            app:textIsDisplayable="false"
+                            app:roundWidth="1dip"
+                            app:textSize="18sp"/>
+
+                        <TextView
+                            android:tag="3"
+                            android:textSize="@dimen/sp09"
+                            android:textColor="@android:color/white"
+                            android:text="3"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/dp10"
+                        style="@style/TextViewBlackText_15"
+                        android:textSize="@dimen/sp12"
+                        android:textColor="@color/health_good"
+                        android:text="测试结果分析"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_skin_quality_belong"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:layout_marginLeft="@dimen/dp34"
+                    style="@style/TextViewBlackText_15"
+                    android:textSize="@dimen/sp18"
+                    android:textColor="@color/health_good"
+                    android:text="测试后查看"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp05"
+                    android:layout_marginLeft="@dimen/dp34"
+                    style="@style/TextViewBlackText_15"
+                    android:textSize="@dimen/sp12"
+                    android:textColor="@color/gray_06"
+                    android:text="专属护肤建议"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_skin_quality_advice"
+                    android:layout_marginTop="12.5dp"
+                    android:layout_marginLeft="@dimen/dp34"
+                    android:layout_marginRight="@dimen/dp15"
+                    style="@style/TextViewBlackText_15"
+                    android:textSize="@dimen/sp10"
+                    android:textColor="@color/gray_06"
+                    android:lineSpacingExtra="8.5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/v_center_line"
+                android:layout_marginTop="@dimen/dp36"
+                android:background="@color/health_good"
+                android:layout_marginLeft="@dimen/dp29"
+                android:layout_width="@dimen/dp01"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

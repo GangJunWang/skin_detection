@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_10"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp19">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                    android:id="@+id/rpb_water_oil_water"
+                    android:layout_width="215dip"
+                    android:layout_height="215dip"
+                    android:layout_centerHorizontal="true"
+                    app:endRoundS="@dimen/dp06"
+                    app:progressWidth="@dimen/dp06"
+                    app:mIsThumbEnabled="true"
+                    app:paddingS="@dimen/dp10"
+                    app:roundColor="@color/project_color"
+                    app:roundProgressColor="@color/health_moderate"
+                    app:roundWidth="1.5dip"
+                    app:style="STROKE"
+                    app:textColor="#9A32CD"
+                    app:textIsDisplayable="false"
+                    app:textSize="18sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                        android:layout_width="144dip"
+                        android:layout_height="144dip"
+                        app:roundColor="@color/project_color"
+                        app:roundProgressColor="@color/health_moderate"
+                        app:roundWidth="0.5dip"
+                        app:style="STROKE"
+                        app:textColor="#9A32CD"
+                        app:textIsDisplayable="false"
+                        app:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:text="水分"
+                            android:textColor="@color/gray_22"
+                            android:textSize="@dimen/sp12" />
+
+                        <TextView
+                            android:id="@+id/tv_water_oil_water_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp05"
+                            android:includeFontPadding="false"
+                            android:text="00"
+                            android:textColor="#4c4f5d"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/tv_water_oil_water_result"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp05"
+                            android:includeFontPadding="false"
+                            android:text="未检测"
+                            android:textColor="@color/gray_22"
+                            android:textSize="@dimen/sp12" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp93"
+                        android:layout_marginTop="@dimen/dp67"
+                        android:includeFontPadding="false"
+                        android:text="%"
+                        android:textColor="@color/gray_22"
+                        android:textSize="@dimen/sp15" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_water_oil_water_t"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp22">
+
+                    <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                        android:id="@+id/rpb_water_oil_water_t"
+                        android:layout_width="27dip"
+                        android:layout_height="27dip"
+                        android:background="@color/gray_10"
+                        app:roundColor="#333541"
+                        app:roundProgressColor="@color/health_moderate"
+                        app:roundWidth="1.5dip"
+                        app:style="STROKE"
+                        app:textColor="#9A32CD"
+                        app:textIsDisplayable="false"
+                        app:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_water_oil_water_t"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="T区"
+                        android:textColor="@color/gray_22"
+                        android:textSize="@dimen/sp09" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_water_oil_water_hand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp23"
+                    android:layout_marginTop="@dimen/dp85">
+
+                    <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                        android:id="@+id/rpb_water_oil_water_hand"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:background="@color/gray_10"
+                        app:roundColor="@color/project_color"
+                        app:roundProgressColor="@color/health_moderate"
+                        app:roundWidth="1.5dip"
+                        app:style="STROKE"
+                        app:textColor="#9A32CD"
+                        app:textIsDisplayable="false"
+                        app:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_water_oil_water_hand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="手部"
+                        android:textColor="@color/gray_22"
+                        android:textSize="@dimen/sp09" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_water_oil_water_eye"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp160"
+                    android:layout_marginTop="@dimen/dp85">
+
+                    <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                        android:id="@+id/rpb_water_oil_water_eye"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:background="@color/gray_10"
+                        app:roundColor="@color/project_color"
+                        app:roundProgressColor="@color/health_moderate"
+                        app:roundWidth="1.5dip"
+                        app:style="STROKE"
+                        app:textColor="#9A32CD"
+                        app:textIsDisplayable="false"
+                        app:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_water_oil_water_eye"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="眼部"
+                        android:textColor="@color/gray_22"
+                        android:textSize="@dimen/sp09" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_water_oil_water_u"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp160">
+
+                    <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                        android:id="@+id/rpb_water_oil_water_u"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:background="@color/gray_10"
+                        app:roundColor="@color/project_color"
+                        app:roundProgressColor="@color/health_moderate"
+                        app:roundWidth="1.5dip"
+                        app:style="STROKE"
+                        app:textColor="#9A32CD"
+                        app:textIsDisplayable="false"
+                        app:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_water_oil_water_u"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="U区"
+                        android:textColor="@color/gray_22"
+                        android:textSize="@dimen/sp09" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                android:id="@+id/rpb_water_oil_water_header_round"
+                android:layout_width="12dip"
+                android:layout_height="12dip"
+                android:layout_marginTop="@dimen/dp02"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/transparent"
+                android:visibility="gone"
+                app:progressWidth="0dp"
+                app:roundColor="@color/project_color"
+                app:roundProgressColor="@color/health_moderate"
+                app:roundWidth="0dip"
+                app:style="FILL"
+                app:textColor="#9A32CD"
+                app:textIsDisplayable="false"
+                app:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp19">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                    android:id="@+id/rpb_water_oil_oil"
+                    android:layout_width="215dip"
+                    android:layout_height="215dip"
+                    android:layout_centerHorizontal="true"
+                    app:mIsThumbEnabled="true"
+                    app:endRoundS="@dimen/dp06"
+                    app:progressWidth="@dimen/dp06"
+                    app:paddingS="@dimen/dp10"
+                    app:roundColor="@color/project_color"
+                    app:roundProgressColor="@color/health_moderate"
+                    app:roundWidth="1.5dip"
+                    app:style="STROKE"
+                    app:textColor="#9A32CD"
+                    app:textIsDisplayable="false"
+                    app:textSize="18sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                        android:layout_width="144dip"
+                        android:layout_height="144dip"
+                        app:roundColor="@color/project_color"
+                        app:roundProgressColor="@color/health_moderate"
+                        app:roundWidth="0.5dip"
+                        app:style="STROKE"
+                        app:textColor="#9A32CD"
+                        app:textIsDisplayable="false"
+                        app:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:text="油分"
+                            android:textColor="@color/gray_22"
+                            android:textSize="@dimen/sp12" />
+
+                        <TextView
+                            android:id="@+id/tv_water_oil_oil_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp05"
+                            android:includeFontPadding="false"
+                            android:text="00"
+                            android:textColor="#4c4f5d"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/tv_water_oil_oil_result"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp05"
+                            android:includeFontPadding="false"
+                            android:text="未检测"
+                            android:textColor="@color/gray_22"
+                            android:textSize="@dimen/sp12" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp93"
+                        android:layout_marginTop="@dimen/dp67"
+                        android:includeFontPadding="false"
+                        android:text="%"
+                        android:textColor="@color/gray_22"
+                        android:textSize="@dimen/sp15" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_water_oil_oil_t"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp23">
+
+                    <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                        android:id="@+id/rpb_water_oil_oil_t"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:background="@color/gray_10"
+                        app:roundColor="@color/project_color"
+                        app:roundProgressColor="@color/health_moderate"
+                        app:roundWidth="1.5dip"
+                        app:style="STROKE"
+                        app:textColor="#9A32CD"
+                        app:textIsDisplayable="false"
+                        app:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_water_oil_oil_t"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="T区"
+                        android:textColor="@color/gray_22"
+                        android:textSize="@dimen/sp09" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_water_oil_oil_hand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp23"
+                    android:layout_marginTop="@dimen/dp85">
+
+                    <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                        android:id="@+id/rpb_water_oil_oil_hand"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:background="@color/gray_10"
+                        app:roundColor="@color/project_color"
+                        app:roundProgressColor="@color/health_moderate"
+                        app:roundWidth="1.5dip"
+                        app:style="STROKE"
+                        app:textColor="#9A32CD"
+                        app:textIsDisplayable="false"
+                        app:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_water_oil_oil_hand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="手部"
+                        android:textColor="@color/gray_22"
+                        android:textSize="@dimen/sp09" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_water_oil_oil_eye"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp160"
+                    android:layout_marginTop="@dimen/dp85">
+
+                    <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                        android:id="@+id/rpb_water_oil_oil_eye"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:background="@color/gray_10"
+                        app:roundColor="@color/project_color"
+                        app:roundProgressColor="@color/health_moderate"
+                        app:roundWidth="1.5dip"
+                        app:style="STROKE"
+                        app:textColor="#9A32CD"
+                        app:textIsDisplayable="false"
+                        app:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_water_oil_oil_eye"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="眼部"
+                        android:textColor="@color/gray_22"
+                        android:textSize="@dimen/sp09" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_water_oil_oil_u"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp160">
+
+                    <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                        android:id="@+id/rpb_water_oil_oil_u"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:background="@color/gray_10"
+                        app:roundColor="@color/project_color"
+                        app:roundProgressColor="@color/health_moderate"
+                        app:roundWidth="1.5dip"
+                        app:style="STROKE"
+                        app:textColor="#9A32CD"
+                        app:textIsDisplayable="false"
+                        app:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_water_oil_oil_u"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="U区"
+                        android:textColor="@color/gray_22"
+                        android:textSize="@dimen/sp09" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <com.zizhu.skindetection.common.widget.image.RoundProgressBar
+                android:id="@+id/rpb_water_oil_oil_header_round"
+                android:layout_width="12dip"
+                android:layout_height="12dip"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/transparent"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/dp02"
+                app:roundColor="@color/project_color"
+                app:roundProgressColor="@color/health_moderate"
+                app:roundWidth="0dp"
+                app:style="FILL"
+                app:textColor="#9A32CD"
+                app:textIsDisplayable="false"
+                app:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp26"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp15">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/left_right_top_coner_shape"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:paddingBottom="@dimen/dp09"
+                    android:paddingTop="@dimen/dp09"
+                    android:text="测试结果分析"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sp12" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/left_right_bottom_shape"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_marginRight="@dimen/dp20"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/dp10"
+                    android:paddingTop="@dimen/dp10">
+
+                    <TextView
+                        style="@style/TextViewBlackText_13"
+                        android:text="T 区："
+                        android:textColor="@color/gray_26"
+                        android:textSize="@dimen/sp13" />
+
+                    <TextView
+                        android:id="@+id/tv_water_oil_t_water_result"
+                        style="@style/TextViewBlackText_11"
+                        android:includeFontPadding="false"
+                        android:text="未检测"
+                        android:textColor="@color/gray_26"
+                        android:textSize="@dimen/sp13" />
+
+                    <TextView
+                        android:id="@+id/tv_water_oil_t_oil_result"
+                        style="@style/TextViewBlackText_13"
+                        android:layout_width="match_parent"
+                        android:gravity="right"
+                        android:text="测试后查看"
+                        android:textColor="@color/gray_26"
+                        android:textSize="@dimen/sp13" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_water_oil_t"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp11"
+                        android:layout_marginRight="@dimen/dp11"
+                        android:background="@android:color/white"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/dp13"
+                        android:paddingLeft="@dimen/dp13"
+                        android:paddingRight="@dimen/dp13"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/TextViewBlackText_13"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="@dimen/dp08"
+                            android:paddingBottom="@dimen/dp08"
+                            android:text="可能存在的肌肤问题"
+                            android:textColor="@color/gray_26"
+                            android:textSize="@dimen/sp13" />
+
+                        <include layout="@layout/layout_line_horizontal" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_water_oil_t"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_01"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp08"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/content_frame_cut_off_rule"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_02"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/content_frame_cut_off_rule"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_marginRight="@dimen/dp20"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/dp10"
+                    android:paddingTop="@dimen/dp10">
+
+                    <TextView
+                        style="@style/TextViewBlackText_13"
+                        android:text="U 区："
+                        android:textColor="@color/gray_26"
+                        android:textSize="@dimen/sp13" />
+
+                    <TextView
+                        android:id="@+id/tv_water_oil_u_water_result"
+                        style="@style/TextViewBlackText_11"
+                        android:includeFontPadding="false"
+                        android:text="未检测"
+                        android:textColor="@color/gray_26"
+                        android:textSize="@dimen/sp13" />
+
+                    <TextView
+                        android:id="@+id/tv_water_oil_u_oil_result"
+                        style="@style/TextViewBlackText_13"
+                        android:layout_width="match_parent"
+                        android:gravity="right"
+                        android:text="测试后查看"
+                        android:textColor="@color/gray_26"
+                        android:textSize="@dimen/sp13" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_water_oil_u"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp11"
+                        android:layout_marginRight="@dimen/dp11"
+                        android:background="@android:color/white"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/dp13"
+                        android:paddingLeft="@dimen/dp13"
+                        android:paddingRight="@dimen/dp13"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/TextViewBlackText_13"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="@dimen/dp08"
+                            android:paddingBottom="@dimen/dp08"
+                            android:text="可能存在的肌肤问题"
+                            android:textColor="@color/gray_26"
+                            android:textSize="@dimen/sp13" />
+
+                        <include layout="@layout/layout_line_horizontal" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_water_oil_u"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_03"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/dp08"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/content_frame_cut_off_rule"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_04"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/content_frame_cut_off_rule"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_marginRight="@dimen/dp20"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/dp10"
+                    android:paddingTop="@dimen/dp10">
+
+                    <TextView
+                        style="@style/TextViewBlackText_13"
+                        android:text="眼 部："
+                        android:textColor="@color/gray_26"
+                        android:textSize="@dimen/sp13" />
+
+                    <TextView
+                        android:id="@+id/tv_water_oil_eye_water_result"
+                        style="@style/TextViewBlackText_11"
+                        android:includeFontPadding="false"
+                        android:text="未检测"
+                        android:textColor="@color/gray_26"
+                        android:textSize="@dimen/sp13" />
+
+                    <TextView
+                        android:id="@+id/tv_water_oil_eye_oil_result"
+                        style="@style/TextViewBlackText_13"
+                        android:layout_width="match_parent"
+                        android:gravity="right"
+                        android:text="测试后查看"
+                        android:textColor="@color/gray_26"
+                        android:textSize="@dimen/sp13" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_water_oil_eye"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp11"
+                        android:layout_marginRight="@dimen/dp11"
+                        android:background="@android:color/white"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/dp13"
+                        android:paddingLeft="@dimen/dp13"
+                        android:paddingRight="@dimen/dp13"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/TextViewBlackText_13"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="@dimen/dp08"
+                            android:paddingBottom="@dimen/dp08"
+                            android:text="可能存在的肌肤问题"
+                            android:textColor="@color/gray_26"
+                            android:textSize="@dimen/sp13" />
+
+                        <include layout="@layout/layout_line_horizontal" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_water_oil_eye"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_05"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/dp08"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/content_frame_cut_off_rule"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_06"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/content_frame_cut_off_rule"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_marginRight="@dimen/dp20"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/dp10"
+                    android:paddingTop="@dimen/dp10">
+
+                    <TextView
+                        style="@style/TextViewBlackText_13"
+                        android:text="手 部："
+                        android:textColor="@color/gray_26"
+                        android:textSize="@dimen/sp13" />
+
+                    <TextView
+                        android:id="@+id/tv_water_oil_hand_water_result"
+                        style="@style/TextViewBlackText_11"
+                        android:includeFontPadding="false"
+                        android:text="未检测"
+                        android:textColor="@color/gray_26"
+                        android:textSize="@dimen/sp13" />
+
+                    <TextView
+                        android:id="@+id/tv_water_oil_hand_oil_result"
+                        style="@style/TextViewBlackText_13"
+                        android:layout_width="match_parent"
+                        android:gravity="right"
+                        android:text="测试后查看"
+                        android:textColor="@color/gray_26"
+                        android:textSize="@dimen/sp13" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/dp06">
+
+                    <LinearLayout
+                        android:id="@+id/ll_water_oil_hand"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp11"
+                        android:layout_marginRight="@dimen/dp11"
+                        android:background="@android:color/white"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/dp13"
+                        android:paddingLeft="@dimen/dp13"
+                        android:paddingRight="@dimen/dp13"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/TextViewBlackText_13"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="@dimen/dp08"
+                            android:paddingBottom="@dimen/dp08"
+                            android:text="可能存在的肌肤问题"
+                            android:textColor="@color/project_color"
+                            android:textSize="@dimen/sp15" />
+
+                        <include layout="@layout/layout_line_horizontal" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_water_oil_hand"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

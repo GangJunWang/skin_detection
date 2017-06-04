@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zizhu.skindetection">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="com.tencent.mm.plugin.permission.SEND" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" >  </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >  </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >  </uses-permission>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".controller.StartLuncherActivity"
+            android:screenOrientation="portrait">
+            <intent-filter android:priority="10000">
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".controller.WaterOilActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.SkinCareActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.SkinQualityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.SkinQualityPKActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".service.BluetoothIntentService" />
+
+        <activity
+            android:name=".controller.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.AppGuideActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".controller.WebBrowserActivity"></activity>
+        <service android:name=".service.BluetoothService" />
+        <service
+            android:name="com.xtremeprog.sdk.ble.BleService"
+            android:enabled="true" />
+    </application>
+
+</manifest>

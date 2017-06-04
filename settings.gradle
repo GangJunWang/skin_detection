@@ -1,0 +1,3 @@
+include ':app', ':quickbases', ':librarys', ':bluetoothlib'
+project(':quickbases').projectDir = new File('quickbase')
+project(':librarys').projectDir = new File('library')
