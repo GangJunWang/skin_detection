@@ -231,6 +231,7 @@ public class SkinQualityPKActivity extends BaseActivity implements IWXAPIEventHa
                                     }
                                     LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) tv_02.getLayoutParams();
                                     if(progress < 100) {
+
                                         layoutParams.leftMargin = DisplayUtil.dip2px(SkinQualityPKActivity.this, 1);
                                     } else{
                                         layoutParams.leftMargin = DisplayUtil.dip2px(SkinQualityPKActivity.this, 14);

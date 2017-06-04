@@ -1,7 +1,6 @@
 package com.zizhu.skindetection.controller;
 
 import android.text.Html;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RadioButton;
@@ -686,6 +685,7 @@ public class SkinQualityActivity extends BaseActivity implements RadioGroup.OnCh
                     }
                 }, 1500);
                 if (checkPosition == -1) {
+
                     return;
                 }
                 ToastUtils.show("检测完成");
